@@ -1,0 +1,42 @@
+/* Fonts */
+/* Font-faces */
+@font-face {
+    font-family: "Bungee Shade";
+    src: url(./Assets/Fonts/Bungee/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Bungee outline";
+    src: url(./Assets/Fonts/Bungee/BungeeShade-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Barlow condensed";
+    src: url(./Assets/Fonts/Barlow/BarlowCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Barlow SeminCondensed";
+    src: url(./Assets/Fonts/Barlow/BarlowSemiCondensed-Bold.ttf);
+}
+/* Font formatting */
+h1 {
+    font-family: "Bungee Shade";
+}
+
+h2 {
+    font-family: "Bungee outline";
+}
+
+h3 {
+    font-family: "Barlow SeminCondensed";
+}
+
+p {
+    font-family: "Barlow condensed";
+}
+
+/* body elements */
+body {
+    background-image: url(./Assets/Images/bg.jpg);
+}
