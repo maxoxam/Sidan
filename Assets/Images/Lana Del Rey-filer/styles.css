@@ -39,7 +39,7 @@ h2 {
 h3 {
     font-family: "Barlow SeminCondensed";
     margin: 0;
-    font-size: 1.5vw
+    font-size: 2vw;
 }
 
 p {
@@ -63,12 +63,12 @@ body {
     background-size: cover;
     }
 
-main {
+header {
     
     background-color: rgba(79, 70, 67, 0.483);
-    margin: 10vh 7vw;
+    margin: 10vh 5vw;
     border-radius: 20px;
-    padding: 1vw;
+    padding: 1rem;
 }
 /* Navigationsfält */
 nav {
@@ -102,7 +102,7 @@ nav div {
     margin-bottom: 10vh;
 }
 /* Main */
-.container {
+main {
     margin: 0 1vw 5vh 1vw;
     background-color: rgba(49, 44, 43, 0.483);
     padding: 1vw;
@@ -113,7 +113,7 @@ nav div {
 
 article {
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1fr 25vh;
 }
 
@@ -121,10 +121,8 @@ article {
 article img {
     border-radius: 20px 20px 0px 0px;
     grid-row-start: 1;
-    grid-column: 10 / span 6 ;
+    grid-column: 9 / span 4 ;
     width: 100%;
-    max-height: 50vh;
-    object-fit: cover;
 
     transition: opacity 0.5s ease-in-out;
 }
@@ -147,44 +145,38 @@ article div:nth-of-type(1) li{
 
 article div:nth-of-type(1) p{
     font-size: 1.5vw;
-    padding-top: 7vh;
-}
-
-article div:nth-of-type(1) h3 {
-    font-size: 2vw;
 }
 
 article div:nth-of-type(1) p:last-child{
-    padding-top: 5vh;
+    padding-top: 15vh;
 }
-
-article div:nth-of-type(2) {
+article:nth-of-type(1) div:nth-of-type(2) {
+    background-color: beige;
     grid-row: 2;
-    grid-column: 10 / 13;
+    grid-column: 9 / span 2;
     border-radius: 0px 0px 0px 35px;
     margin-top: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
     margin-bottom: 10px;
     padding-left: 10px;
-    padding-top: 10px;
-    font-size: 1vw;
+    font-size: 1.2vw;
+    font-weight: 700;
 }
 
 article div:nth-of-type(3) {
+    background-color: beige;
     grid-row: 2;
-    grid-column: 13/16;
+    grid-column: 11/14;
     margin-top: 10px;
     border-radius: 0px 0px 35px 0px;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-bottom: 10px;
     padding-left: 10px;
-    padding-top: 10px;
-    font-size:1vw;
 }
 
 
 article ol {
-    padding-left: 12px;
+    padding-left: 20px;
     margin:0;
     overflow: hidden;
 }
@@ -194,11 +186,11 @@ article ul {
 }
 
 /* Aside */
-aside {
+Aside {
     display: grid;
-    grid-template-rows: 25vh;
-    grid-template-columns: 1.25fr 1.25fr 3fr 1.25fr 1.25fr;
-    grid-gap: 5px;
+    grid-template-rows: 22vh;
+    grid-template-columns: 12vw 12vw 20vw 12vw 12vw;
+    grid-gap: 8px;
 }
 
 aside div {
@@ -209,16 +201,23 @@ aside div {
 /* aside */
 aside>div{
     grid-column: 1;
+    background-color: #CC0000;
     border-radius: 35px 0 35px 35px;
 }
 
+aside>div>div {
+    padding:0;
+    overflow: hidden;
+}
+
 aside div:nth-of-type(2) {
-    grid-column: 3;
+    grid-column: 3 / span 2;
+    background-color: #CC0000;
     border-radius: 35px 35px 35px 0;
 }
 
 aside div:nth-child(3) {
-    grid-column: 4;
+    grid-column: 5;
     background-image: url(./Assets/Images/bg.jpg);
     background-size: contain;
     border-radius: 0 35px 35px 35px;
@@ -232,68 +231,15 @@ aside div div {
 }
 
 aside div:nth-child(4) {
-    grid-column: 5;
+    grid-column: 6;
+    background-color: #CC0000;
 }
-
-#second {
-    display: grid;
-    grid-template-rows: 25vh;
-    grid-template-columns: 3fr 1.2fr 3fr 1.2fr;
-    grid-gap: 8px;
-}
-
-#second div:first-child {
-    grid-column: 1 / span 2;
-}
-
-#second div {
-    padding: 5vh 2vh;
-    overflow: hidden;
-}
-
-#second div:first-child {
-    grid-column: 1;
-    border-radius: 20px 20px 20px 0;
-}
-
-#second div:nth-child(2) {
-    grid-column: 2;
-    border-radius: 0 20px 20px 20px;
-}
-
-#second div:nth-child(3) {
-    grid-column: 3;
-    border-radius: 0 20px 20px 20px;
-}
-
-#second div:nth-child(4) {
-    grid-column: 4;
-    border-radius: 20px 20px 0 20px;
-}
-
-
 
 /* Hover */ 
 
 nav a:hover {
     background-color: black;
     color: white;
-}
-
-/* Class */
-.beige {
-    background-color: beige;
-    color: #CC0000;
-}
-
-.red{
-   background-color: #CC0000; 
-   color: beige;
-}
-
-.orange {
-    background-color: rgba(255, 166, 0, 0.786);
-    color: green;
 }
 
 /* Media queries */
