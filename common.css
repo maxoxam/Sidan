@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+@font-face {
+    font-family: "Royal Acid";
+    src: url(./Assets/Fonts/RoyalAcid/Royalacid.ttf); 
+ }
+ 
+ @font-face {
+     font-family: "Bungee outline";
+     src: url(./Assets/Fonts/Bungee/BungeeShade-Regular.ttf);
+ }
+ 
+ @font-face {
+     font-family: "Barlow condensed";
+     src: url(./Assets/Fonts/Barlow/BarlowCondensed-Regular.ttf);
+ }
+ 
+ @font-face {
+     font-family: "Barlow SeminCondensed";
+     src: url(./Assets/Fonts/Barlow/BarlowSemiCondensed-Bold.ttf);
+ }
+ 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+aside div p {
+    font-size: 0.9rem;
+}
+
+aside div:nth-of-type(3) p{
+    align-self: end;
+    color:#CC0000;
+}
+
+aside div:nth-of-type(3) {
+    padding: 2vw;
+}
+
+nav {
+    display: flex;
+    gap: 1vw;
+}
+
+nav a {
+    flex: 1 0 0;
+    background-color: rgba(211, 211, 211, 0.58);
+    padding: 2vw;
+    border-radius:15px;
+    border:1px solid black;
+    text-align: center;
+    font-family: "Royal Acid";
+    font-size: 1rem;
+    margin-bottom: 10vh;
+} 
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+nav div {
+    box-shadow: 0 0 50px white;
+    flex: 1 0 0;
+    background-color: rgba(211, 211, 211, 0.58);
+    padding: 2vw;
+    border-radius:20px;
+    border:1px solid black;
+    text-align: center;
+    font-family: "Royal Acid";
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-bottom: 10vh;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10vh;
+    font-family: "Royal Acid";
+    font-size: 75px;
+    color: #CC0000;
+}
+
+h2 {
+    font-family: "Bungee outline";
+    font-size: 300%;
+    margin:0;
+    color:antiquewhite;
+}
+
+h3 {
+    font-family: "Barlow SeminCondensed";
+    margin: 0;
+    font-size: 2vw;
+    color:antiquewhite;
+}
+
+li {
+    font-family: "barlow condensed";
+}
+
+p {
+    font-family: "Barlow condensed";
+    font-size: 1rem;
+    margin:0;
+}
+.container {
+    margin: 0 1vw 5vh 1vw;
+    background-color: rgba(49, 44, 43, 0.483);
+    padding: 1vw;
+    border: 1px solid white;
+    border-radius: 20px;   
+}
+
+.red{
+    background-color: #CC0000; 
+    color: beige;
+ }
+
+ .beige {
+    background-color: beige;
+    color: #CC0000;
+}

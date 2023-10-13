@@ -1,0 +1,206 @@
+
+
+
+
+article {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: 1fr 15vw;
+}
+
+
+article div:nth-of-type(1) {
+    grid-row: 1 / span 2;
+    grid-column: 1 / 10;
+    margin-right:3vw;
+    padding-top: 10px;
+    list-style: none;
+    font-size: 1rem;
+}
+
+article div:nth-of-type(1) h3 {
+    font-size: 200%;
+}
+
+article div:nth-of-type(1) li{
+    list-style: none;
+    font-size: 1rem;
+    color:antiquewhite;
+}
+
+article div:nth-of-type(1) p{
+    font-size: 1rem;
+    padding-top: 7vh;
+    color: antiquewhite;
+}
+
+article div:nth-of-type(1) p:last-child{
+    padding-top: 5vh;
+    padding-bottom: 7vh;
+}
+
+article div:nth-of-type(2) {
+    grid-row: 2;
+    grid-column: 10 / 13;
+    border-radius: 0px 0px 0px 35px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 1vw;
+}
+
+article div:nth-of-type(3) {
+    grid-row: 2;
+    grid-column: 13/16;
+    margin-top: 10px;
+    border-radius: 0px 0px 35px 0px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 1vw;
+}
+
+
+article img {
+    border-radius: 20px 20px 0px 0px;
+    grid-row-start: 1;
+    grid-column: 10 / span 6 ;
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+article img:hover {
+    opacity: 0;
+}
+
+article ol {
+    padding-left: 15px;
+    margin:0;
+    overflow: hidden;
+}
+
+article ul {
+    margin:0;
+}
+
+aside {
+    display: grid;
+    grid-template-rows: 25vh;
+    grid-template-columns: 1.25fr 1.25fr 3fr 1.25fr 1.25fr;
+    grid-gap: 5px;
+}
+
+aside>div{
+    grid-column: 1;
+    border-radius: 35px 0 35px 35px;
+    
+}
+
+aside div {
+    padding: 5vh 2vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+aside div:nth-of-type(2) {
+    grid-column: 3;
+    border-radius: 35px 35px 35px 0;
+}
+
+aside div:nth-of-type(3) {
+    grid-column: 4;
+    background-image: url(./Assets/Images/PMP.jpg);
+    background-size: 100% 100%;
+    border-radius: 0 35px 35px 35px;
+    color: antiquewhite;
+}
+
+aside div:nth-child(4) {
+    grid-column: 5;
+}
+
+
+
+body {
+    background-image: url(./Assets/Images/port.webp);
+    background-size: cover;
+    background-position-x: 60%;
+    background-attachment: fixed ;
+    }
+
+div .beige h3{
+    color: #CC0000; 
+ }
+ 
+ div .beige li {
+     color: #CC0000;
+ }
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10vh;
+    font-family: "Royal Acid";
+    font-size: 75px;
+    color: #CC0000;
+}
+
+main {
+    
+    background-color: rgba(79, 70, 67, 0.483);
+    margin: 10vh 7vw;
+    border-radius: 20px;
+    padding: 1vw;
+}
+
+
+
+
+.red{
+    background-color: #CC0000; 
+    color: beige;
+ }
+
+#second {
+    display: grid;
+    grid-template-rows: 25vh;
+    grid-template-columns: 3fr 1.2fr 3fr 1.2fr;
+    grid-gap: 8px;
+}
+
+#second div {
+    padding: 5vh 2vh;
+    overflow: hidden;
+}
+
+#second div:first-child {
+    border-radius: 20px 20px 20px 0;
+    grid-column: 1;
+}
+
+#second div:nth-child(2) {
+    grid-column: 2;
+    border-radius: 0 20px 20px 20px;
+}
+
+#second div:nth-child(3) {
+    grid-column: 3;
+    border-radius: 0 20px 20px 20px;
+}
+
+#second div:nth-child(4) {
+    grid-column: 4;
+    border-radius: 20px 20px 0 20px;
+}
+
+@media (min-width:800px) and (max-width:900px) {
+    article div:nth-child(1) p {
+        font-size: 14px;
+    }
+}
