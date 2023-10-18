@@ -3,12 +3,12 @@
     margin: 0;
 }
 @font-face {
-    font-family: "Royal Acid";
-    src: url(./Assets/Fonts/RoyalAcid/Royalacid.ttf); 
+    font-family: "Bungee outline";
+    src: url(./Assets/Fonts/Bungee/BungeeOutline-Regular.ttf) 
  }
  
  @font-face {
-     font-family: "Bungee outline";
+     font-family: "Bungee Shadee";
      src: url(./Assets/Fonts/Bungee/BungeeShade-Regular.ttf);
  }
  
@@ -27,9 +27,14 @@ a {
     color: black;
 }
 
+article ul {
+    margin:0;
+}
 
-aside div p {
-    font-size: 0.9rem;
+aside div:nth-of-type(3){
+    background-image: url(./Assets/Images/PMP.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 aside div:nth-of-type(3) p{
@@ -37,57 +42,56 @@ aside div:nth-of-type(3) p{
     color:#CC0000;
 }
 
-aside div:nth-of-type(3) {
-    padding: 2vw;
+
+div .orange p {
+    color: black;
 }
 
 nav {
     display: flex;
     gap: 1vw;
+    margin: 0 2vw;
 }
 
 nav a {
     flex: 1 0 0;
     background-color: rgba(211, 211, 211, 0.58);
-    padding: 2vw;
     border-radius:15px;
-    border:1px solid black;
     text-align: center;
-    font-family: "Royal Acid";
-    font-size: 1rem;
-    margin-bottom: 10vh;
+    align-self: center;
+    font-family: "Barlow condensed";
+    font-size: 3vw;
+    margin-bottom: 8vw;
 } 
 
 nav a:hover {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.597);
     color: white;
 }
 
 nav div {
-    box-shadow: 0 0 50px white;
+    box-shadow: 0 0 20px white;
     flex: 1 0 0;
     background-color: rgba(211, 211, 211, 0.58);
-    padding: 2vw;
-    border-radius:20px;
-    border:1px solid black;
+    border-radius:15px;
     text-align: center;
-    font-family: "Royal Acid";
-    font-size: 1.2em;
-    font-weight: bolder;
-    margin-bottom: 10vh;
+    align-self: center;
+    font-family: "Barlow Semincondensed";
+    font-size: 3vw;
+    margin-bottom: 8vw;
 }
 
 h1 {
     margin-top: 0;
     margin-bottom: 10vh;
-    font-family: "Royal Acid";
-    font-size: 75px;
+    font-family: "Bungee Shadee";
+    font-size: 7vh;
     color: #CC0000;
 }
 
 h2 {
     font-family: "Bungee outline";
-    font-size: 300%;
+    font-size: 2rem;
     margin:0;
     color:antiquewhite;
 }
@@ -95,23 +99,35 @@ h2 {
 h3 {
     font-family: "Barlow SeminCondensed";
     margin: 0;
-    font-size: 2vw;
+    font-size: 1.5rem;
     color:antiquewhite;
 }
 
 li {
     font-family: "barlow condensed";
+    color: antiquewhite;
 }
 
 p {
     font-family: "Barlow condensed";
-    font-size: 1rem;
     margin:0;
+    color: antiquewhite;
 }
+
+#second div:nth-child(3) {
+    background-image: url(./Assets/Images/jackandlana.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#second div:nth-child(3) p {
+    align-self: end;
+    color: orange;
+}
+
 .container {
-    margin: 0 1vw 5vh 1vw;
     background-color: rgba(49, 44, 43, 0.483);
-    padding: 1vw;
+    padding: 1rem;
     border: 1px solid white;
     border-radius: 20px;   
 }
@@ -124,4 +140,14 @@ p {
  .beige {
     background-color: beige;
     color: #CC0000;
+}
+
+.orange {
+    background-color: orange;
+    color:rgb(34, 32, 32);
+}
+
+.black {
+    background-color: rgb(44, 41, 41);
+    color:orange;
 }

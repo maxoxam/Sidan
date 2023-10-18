@@ -2,7 +2,7 @@
 article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60vh 30vh 1fr;  
+    grid-template-rows: minmax(0 1fr) 1fr 1fr;  
 }
 
 article div:nth-of-type(1) {
@@ -10,21 +10,22 @@ article div:nth-of-type(1) {
     grid-column: 1 / 5;
     margin-right:3vw;
     padding-top: 10px;
+    padding-bottom: 10px;
     list-style: none;
     font-size: 100%;
 }
 
 article div:nth-of-type(1) h3 {
-    font-size: 200%;
+    font-size: 2rem;
 }
 
 article div:nth-of-type(1) li{
     list-style: none;
-    font-size: 120%;
+    font-size: 1.2rem;
 }
 
 article div:nth-of-type(1) p{
-    font-size: 120%;
+    font-size: 1.2rem;
     padding-top: 7vh;
 }
 
@@ -35,25 +36,27 @@ article div:nth-of-type(1) p:last-child{
 article div:nth-of-type(2) {
     grid-row: 2;
     grid-column: 1/3;
-    border-radius: 0px 0px 0px 35px;
+    border-radius: 0px 0px 0px 20px;
     margin-top: 10px;
     margin-right: 5px;
     margin-bottom: 10px;
     padding-left: 10px;
-    padding-top: 15px;
-    font-size: 100%;
+    padding-top: 10px;
+    padding-bottom: 5vw;
+    font-size: 1.2vw;
 }
 
 article div:nth-of-type(3) {
     grid-row: 2;
     grid-column: 3/5;
     margin-top: 10px;
-    border-radius: 0px 0px 35px 0px;
+    border-radius: 0px 0px 20px 0px;
     margin-left: 5px;
     margin-bottom: 10px;
     padding-left: 15px;
-    padding-top: 15px;
-    font-size: 100%;
+    padding-top: 10px;
+    padding-bottom: 5vw;
+    font-size: 1rem;
 }
 
 article img {
@@ -61,7 +64,7 @@ article img {
     grid-column: 1/5;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
 }
@@ -70,38 +73,46 @@ article img:hover {
     opacity: 0;
 }
 
+article ol {
+    padding-left: 3vw;
+    margin:0;
+    overflow: hidden;
+}
+
 aside {
     display: grid;
-    grid-template-rows: 30vh 30vh;
+    grid-template-rows: 40vw 40vw;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 5px;
+    margin-top: 5px;
+}
+
+aside>div{
+    grid-column: 1;
+    border-radius: 20px 0 20px 20px;
+    align-items: center;
 }
 
 aside div {
-    padding: 1vh 1vh;
+    padding: 3vw 2vw;
     overflow: hidden;
     display: flex;
     align-items: center;
 }
 
-aside>div{
-    grid-column: 1;
-    border-radius: 35px 0 35px 35px;
-    align-items: center;
+aside div p {
+    font-size: 3vw;
 }
 
 aside div:nth-of-type(2) {
     grid-column: 2 / span 2;
-    border-radius: 35px 35px 35px 0;
+    border-radius: 20px 20px 20px 0;
 }
 
 aside div:nth-of-type(3) {
     grid-column: 2;
     grid-row: 2;
-    background-image: url(./Assets/Images/PMP.jpg);
-    background-size: 100% 100%;
-    border-radius: 0 35px 35px 35px;
-    color: antiquewhite;
+    border-radius: 0 20px 20px 20px;
 }
 
 aside div:nth-child(4) {
@@ -110,12 +121,108 @@ aside div:nth-child(4) {
 
 body {
     background-image: url(./Assets/Images/mobbg.jpg);
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+div .beige h3{
+    color: #CC0000; 
+    font-size: 4vw;
+ }
+ 
+
+div .beige li {
+    color: #CC0000;
+    font-size: 3vw;
+}
+
+div .black h3{
+    color: orange; 
+    font-size: 4vw;
+ }
+ 
+
+div .black li {
+    color: antiquewhite;
+    font-size: 3vw;
+}
+
+
+footer {
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    text-align: center;
 }
 
 h1{
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5vh;
+    padding-bottom: 2vw;
 }
- 
+
+main {
+    padding: 0 3vw;
+}
+
+nav a {
+    padding: 4vw;
+}
+
+nav div {
+    padding:4vw;
+}
+
+.container {
+    margin: 0 1vw 3vw 1vw;
+}
+
+#second {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 40vw 40vw;
+    grid-gap: 5px;
+
+}
+
+#second div {
+    padding: 4vw 2vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#second ol {
+    padding-left: 3vw;
+    margin:0;
+    overflow: hidden;
+}
+
+#second div p {
+    font-size: 3vw;
+}
+
+#second div:first-child {
+    border-radius: 20px 20px 20px 0;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#second div:nth-child(2) {
+    grid-column: 2;
+    border-radius: 0 20px 20px 20px;
+    grid-row: 1;
+}
+
+#second div:nth-child(3) {
+    border-radius: 0 20px 20px 20px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#second div:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 20px 20px 0 20px;
+}

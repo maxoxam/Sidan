@@ -1,75 +1,66 @@
-
-
-
-
 article {
     display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: 1fr 15vw;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 30vw 1fr ;
 }
 
 
 article div:nth-of-type(1) {
-    grid-row: 1 / span 2;
-    grid-column: 1 / 10;
+    grid-row: 1 / 2;
+    grid-column: 1;
     margin-right:3vw;
     padding-top: 10px;
+    margin-bottom: 2vw;
     list-style: none;
-    font-size: 1rem;
-}
-
-article div:nth-of-type(1) h3 {
-    font-size: 200%;
 }
 
 article div:nth-of-type(1) li{
     list-style: none;
-    font-size: 1rem;
+    font-size: 1.25vw;
     color:antiquewhite;
 }
 
 article div:nth-of-type(1) p{
-    font-size: 1rem;
-    padding-top: 7vh;
+    font-size: 1.25vw;
+    padding-top: 4vw;
     color: antiquewhite;
 }
 
 article div:nth-of-type(1) p:last-child{
-    padding-top: 5vh;
-    padding-bottom: 7vh;
+    padding-top: 2vw;
+    padding-bottom: 3vw;
 }
 
 article div:nth-of-type(2) {
     grid-row: 2;
-    grid-column: 10 / 13;
+    grid-column: 2/3;
     border-radius: 0px 0px 0px 35px;
     margin-top: 10px;
     margin-right: 5px;
     margin-bottom: 10px;
-    padding-left: 10px;
-    padding-top: 15px;
-    font-size: 1vw;
+    padding-left: 1.5vw;
+    padding-right: 5px;
+    padding-top: 0.5vw;
+    padding-bottom: 2vw;
 }
 
 article div:nth-of-type(3) {
     grid-row: 2;
-    grid-column: 13/16;
+    grid-column: 3/4;
     margin-top: 10px;
     border-radius: 0px 0px 35px 0px;
     margin-left: 5px;
     margin-bottom: 10px;
-    padding-left: 15px;
-    padding-top: 15px;
-    font-size: 1vw;
+    padding-left:  1.5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 2vw;
 }
-
 
 article img {
     border-radius: 20px 20px 0px 0px;
     grid-row-start: 1;
-    grid-column: 10 / span 6 ;
+    grid-column: 2/4 ;
     width: 100%;
-    min-width: 100%;
     height: 100%;
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
@@ -80,104 +71,143 @@ article img:hover {
 }
 
 article ol {
-    padding-left: 15px;
+    padding-left: 1.2vw;
     margin:0;
     overflow: hidden;
 }
 
-article ul {
-    margin:0;
-}
-
 aside {
     display: grid;
-    grid-template-rows: 25vh;
-    grid-template-columns: 1.25fr 1.25fr 3fr 1.25fr 1.25fr;
+    grid-template-rows: 180px;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
     grid-gap: 5px;
 }
 
-aside>div{
-    grid-column: 1;
-    border-radius: 35px 0 35px 35px;
-    
-}
-
 aside div {
-    padding: 5vh 2vh;
+    padding: 3.5vw 1vw;
     overflow: hidden;
     display: flex;
     align-items: center;
 }
 
+aside div:first-child{
+    grid-column: 1;
+    border-radius: 20px 0 20px 20px;
+    
+}
+
 aside div:nth-of-type(2) {
     grid-column: 3;
-    border-radius: 35px 35px 35px 0;
+    border-radius: 20px 20px 20px 0;
 }
 
 aside div:nth-of-type(3) {
     grid-column: 4;
-    background-image: url(./Assets/Images/PMP.jpg);
-    background-size: 100% 100%;
-    border-radius: 0 35px 35px 35px;
+    padding: 1vw;
+    border-radius: 0 20px 20px 20px;
     color: antiquewhite;
 }
 
 aside div:nth-child(4) {
     grid-column: 5;
+    border-radius: 20px 20px 0 20px;
 }
 
-
+aside div p {
+    font-size: 1.2vw;
+}
 
 body {
     background-image: url(./Assets/Images/port.webp);
     background-size: cover;
     background-position-x: 60%;
-    background-attachment: fixed ;
+    background-attachment: fixed;
+    display: flex;
     }
 
 div .beige h3{
     color: #CC0000; 
- }
- 
- div .beige li {
-     color: #CC0000;
- }
+    font-size: 1.6vw;
+    }
+      
+
+div .beige li {
+    color: #CC0000;
+    font-size: 1.4vw;
+} 
+
+div .beige ol {
+    padding-bottom: 10px;
+}
+
+div .black h3 {
+    color: orange;
+    font-size: 1.5vw;
+}
+
+div .black li {
+    font-size: 1.2vw;
+}
+
+footer {
+    padding-top: 5vw;
+    padding-left: 1vw;
+}
 
 h1 {
     margin-top: 0;
-    margin-bottom: 10vh;
-    font-family: "Royal Acid";
+    margin-bottom: 4vw;
+    font-family: "Bungee shadee";
     font-size: 75px;
-    color: #CC0000;
+    color: antiquewhite;
+}
+
+nav a {
+    padding: 1vw;
+}
+
+nav div {
+    padding: 1vw;
 }
 
 main {
-    
+    flex: 1 0 0;
+    justify-content: center;
     background-color: rgba(79, 70, 67, 0.483);
-    margin: 10vh 7vw;
+    margin: 8vw 7vw;
     border-radius: 20px;
     padding: 1vw;
 }
 
+p {
+    font-family: "Barlow condensed";
+    font-size: 1.5vw;
+    margin:0;
+    color: antiquewhite;
+}
 
-
-
-.red{
-    background-color: #CC0000; 
-    color: beige;
- }
+.container {
+    margin: 0 1vw 4vw 1vw;
+}
 
 #second {
     display: grid;
-    grid-template-rows: 25vh;
+    grid-template-rows: 180px;
     grid-template-columns: 3fr 1.2fr 3fr 1.2fr;
-    grid-gap: 8px;
+    grid-gap: 5px;
 }
 
 #second div {
-    padding: 5vh 2vh;
+    padding: 2vw 1vw;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
+
+#second div p {
+    font-size: 1.2vw;
+}
+
 
 #second div:first-child {
     border-radius: 20px 20px 20px 0;
@@ -186,10 +216,14 @@ main {
 
 #second div:nth-child(2) {
     grid-column: 2;
-    border-radius: 0 20px 20px 20px;
+    border-radius: 0 3vw 3vw 3vw;
 }
 
 #second div:nth-child(3) {
+    background-image: url(./Assets/Images/jackandlana.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 1vw;
     grid-column: 3;
     border-radius: 0 20px 20px 20px;
 }
@@ -200,7 +234,218 @@ main {
 }
 
 @media (min-width:800px) and (max-width:900px) {
+
+    article div:nth-of-type(1) li{
+        font-size: 12px;
+    }
+
     article div:nth-child(1) p {
+        font-size: 12px;
+    }
+
+    article div:nth-of-type(1) h3 {
         font-size: 14px;
     }
+    
+    article div:nth-of-type(1) li{
+        list-style: none;
+        font-size: 12px;
+    }
+
+    aside div p {
+        font-size: 12px;
+    }
+
+    div .beige h3{ 
+        font-size: 15px;
+        }
+          
+    
+    div .beige li {
+        color: #CC0000;
+        font-size: 12px;
+    } 
+    
+    div .black h3 {
+        color: orange;
+        font-size: 15px;
+    }
+
+    div .black li {
+        font-size: 10px;
+    }
+    
+    h1 {
+        font-size: 65px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    nav a {
+        font-size: 25px;
+    }
+
+    nav div {
+        font-size: 25px;
+    }
+
+    #second div p {
+        font-size: 12px;
+    }
+
+}
+
+@media (min-width:1200px) {
+
+    article {
+        display: grid;
+        grid-template-columns: 550px 180px 180px;
+        grid-template-rows: 320px 174px ;
+    }
+
+    article div:nth-of-type(1) {
+        margin-right:36px;
+        margin-bottom: 24px;
+    }
+
+    article div:nth-of-type(1) p{
+        font-size: 14px;
+        padding-top: 48px;
+        color: antiquewhite;
+    }
+
+    article div:nth-of-type(1) p:last-child{
+        padding-top: 24px;
+        padding-bottom: 36px;
+    }
+
+
+    article div:nth-of-type(1) li{
+        font-size: 14px;
+    }
+
+    article div:nth-of-type(2) {
+        padding-left: 18px;
+        padding-top: 6px;
+        padding-bottom: 24px;
+        height: 165px;
+    }
+    article div:nth-of-type(3) {
+        padding-left: 18px;
+        padding-top: 6px;
+        padding-bottom: 24px;
+        height: 165px;
+    }
+
+    article ol {
+        padding-left: 18px;
+    }
+
+    aside {
+        margin-top: 10px;
+        display: grid;
+        grid-template-rows: 175px;
+        grid-template-columns: 130px 130px 380px 130px 130px;
+    }
+
+    aside div:nth-of-type(3) {
+        padding: 12px;
+    }
+
+    aside div {
+        padding: 42px 12px;
+    } 
+
+    aside div p {
+        font-size: 14px;
+    }
+    
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        flex: 0 0 0;
+        margin: 96px 84px;
+        border-radius: 20px;
+        padding: 12px;
+        max-width: 1000px;
+    }
+
+    div .beige h3{
+        color: #CC0000; 
+        font-size: 19px;
+        }
+          
+    
+    div .beige li {
+        color: #CC0000;
+        font-size: 16px;
+    } 
+    
+    div .beige ol {
+        padding-bottom: 0.5vw;
+    }
+
+    div .black h3 {
+        font-size: 19px;
+    }
+    
+    div .black li {
+        font-size: 15px;
+    }
+
+    footer {
+        padding-top: 78px;
+        padding-left: 12px;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 36px;
+        margin-bottom: 96px;
+    }
+    
+    nav div {
+        padding: 12px;
+        font-size: 36px;
+        margin-bottom: 96px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .container {
+        background-color: rgba(49, 44, 43, 0.483);
+        padding: 12px;
+        margin: 0 14px 48px 14px;
+    }
+
+    #second {
+        grid-template-rows: 175px;
+        grid-template-columns: 320px 130px 320px 130px;
+        margin-top: 10px;
+    }
+
+    #second div {
+        padding: 42px 12px;
+    }
+
+    #second div p {
+        font-size: 14px;
+    }
+
+    #second div:nth-child(3) {
+        padding: 12px;
+    }
+
 }
