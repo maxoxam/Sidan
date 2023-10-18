@@ -11,7 +11,6 @@ article div:nth-of-type(1) {
     margin-right:3vw;
     padding-top: 10px;
     padding-bottom: 10px;
-    list-style: none;
     font-size: 100%;
 }
 
@@ -64,7 +63,6 @@ article img {
     grid-column: 1/5;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
-    height: auto;
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
 }
@@ -75,7 +73,6 @@ article img:hover {
 
 article ol {
     padding-left: 3vw;
-    margin:0;
     overflow: hidden;
 }
 
@@ -90,7 +87,6 @@ aside {
 aside>div{
     grid-column: 1;
     border-radius: 20px 0 20px 20px;
-    align-items: center;
 }
 
 aside div {

@@ -220,9 +220,6 @@ p {
 }
 
 #second div:nth-child(3) {
-    background-image: url(./Assets/Images/jackandlana.jpg);
-    background-size: cover;
-    background-position: center;
     padding: 1vw;
     grid-column: 3;
     border-radius: 0 20px 20px 20px;
@@ -306,7 +303,7 @@ p {
     article {
         display: grid;
         grid-template-columns: 550px 180px 180px;
-        grid-template-rows: 320px 174px ;
+        grid-template-rows: 340px 174px;
     }
 
     article div:nth-of-type(1) {
